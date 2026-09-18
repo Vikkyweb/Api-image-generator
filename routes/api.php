@@ -34,7 +34,7 @@ Route::middleware(['auth:sanctum', 'throttle:api'])->group(function(){
     
     Route::prefix('v1')->group(function(){
         Route::apiResource('posts', PostController::class);
-        Route::apiResource('image-generations', ImageGenerationController::class)->only(['index','create']);
+        Route::apiResource('image-generations', ImageGenerationController::class)->only(['index','store']);
     });
 });
 // // Versioning API

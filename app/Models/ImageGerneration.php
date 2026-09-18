@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class ImageGerneration extends Model
+class ImageGeneration extends Model
 {
     protected $fillable = ['user_id','image_path','original_filename','file_size','generated_prompt','mime_type'];
 
